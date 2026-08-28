@@ -1,0 +1,2240 @@
+/* =========================================
+   ENDO HOPE
+   Main Stylesheet
+   ========================================= */
+
+
+/* ---------- Global Styles ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #30252d;
+    background-color: #fffaf8;
+    line-height: 1.6;
+}
+
+
+/* ---------- Navigation ---------- */
+
+header {
+    background-color: #fffaf8;
+    border-bottom: 1px solid #eee1e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #6f294f;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4d3b45;
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #9b456d;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #6f294f;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #52203a;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    max-width: 1200px;
+    min-height: 75vh;
+
+    margin: auto;
+    padding: 70px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    line-height: 1;
+    color: #54233e;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 550px;
+
+    font-size: 1.2rem;
+    color: #66545e;
+}
+
+
+/* ---------- Hero Image ---------- */
+
+.hero-image {
+    width: 100%;
+    height: 520px;
+
+    overflow: hidden;
+
+    border-radius: 35px 35px 35px 5px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.hero-buttons {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button,
+.whatsapp-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.primary-button {
+    background-color: #6f294f;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #52203a;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    border: 1px solid #6f294f;
+    color: #6f294f;
+}
+
+.secondary-button:hover {
+    background-color: #6f294f;
+    color: white;
+}
+
+
+/* ---------- General Sections ---------- */
+
+.intro,
+.community,
+.care,
+.contact {
+    padding: 100px 30px;
+}
+
+.section-heading {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    color: #54233e;
+    margin-bottom: 20px;
+}
+
+.section-heading p:not(.eyebrow) {
+    color: #66545e;
+    font-size: 1.05rem;
+}
+
+
+/* ---------- Introduction ---------- */
+
+.intro {
+    background-color: white;
+}
+
+
+/* ---------- Community ---------- */
+
+.community {
+    background-color: #f5e8ee;
+}
+
+
+/* ---------- Find Care ---------- */
+
+.care {
+    background-color: white;
+}
+/* ---------- Find Care ---------- */
+
+.care-grid {
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.care-card {
+    padding: 40px;
+
+    background-color: #fffaf8;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.care-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(84, 35, 62, 0.08);
+}
+
+.care-icon {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.care-card h3 {
+    color: #54233e;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 12px;
+}
+
+.care-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Appointment Box ---------- */
+
+.appointment-box {
+    max-width: 1000px;
+
+    margin: 70px auto 0;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background-color: #f5e8ee;
+}
+
+.appointment-content {
+    max-width: 700px;
+}
+
+.appointment-content h3 {
+    color: #54233e;
+
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.appointment-content p:not(.eyebrow) {
+    color: #66545e;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Support ENDO HOPE ---------- */
+
+.support {
+    padding: 100px 30px;
+
+    background-color: #fffaf8;
+}
+
+.support-grid {
+    max-width: 1000px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.support-card {
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(84, 35, 62, 0.08);
+}
+
+.support-icon {
+    font-size: 2.2rem;
+
+    margin-bottom: 20px;
+}
+
+.support-card h3 {
+    color: #54233e;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+}
+
+.support-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 25px;
+}
+
+
+/* ---------- Transparency ---------- */
+
+.transparency-box {
+    max-width: 900px;
+
+    margin: 70px auto 0;
+
+    padding: 40px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 25px;
+}
+
+.transparency-content {
+    max-width: 700px;
+}
+
+.transparency-content h3 {
+    color: #54233e;
+
+    font-size: 1.7rem;
+
+    margin-bottom: 15px;
+}
+
+.transparency-content p:not(.eyebrow) {
+    color: #66545e;
+}
+/* ---------- Contact ---------- */
+
+.contact {
+    background-color: #54233e;
+}
+
+.contact .eyebrow {
+    color: #e8a9c5;
+}
+
+.contact h2,
+.contact p:not(.eyebrow) {
+    color: white;
+}
+
+.whatsapp-button {
+    margin-top: 25px;
+    background-color: #ffffff;
+    color: #54233e;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- Information Cards ---------- */
+
+.info-grid {
+    max-width: 1200px;
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #fffaf8;
+
+    padding: 30px;
+
+    border: 1px solid #eee1e5;
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(84, 35, 62, 0.08);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background-color: #f5e8ee;
+    color: #6f294f;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.info-card h3 {
+    color: #54233e;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    margin-bottom: 20px;
+}
+
+.learn-link {
+    color: #6f294f;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 0.9rem;
+}
+
+.learn-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Endo Warriors ---------- */
+
+.story-grid {
+    max-width: 1100px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.story-card {
+    background-color: #fffaf8;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    border: 1px solid #eadbe1;
+
+    position: relative;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(84, 35, 62, 0.08);
+}
+
+.story-mark {
+    font-size: 4rem;
+
+    line-height: 1;
+
+    color: #d69ab5;
+
+    height: 45px;
+}
+
+.story-text {
+    color: #4d3b45;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    margin: 15px 0 30px;
+}
+
+.story-author {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.story-author span {
+    color: #54233e;
+
+    font-weight: 700;
+}
+
+.story-author small {
+    color: #88747e;
+}
+
+
+/* ---------- Share Story ---------- */
+
+.share-story {
+    max-width: 700px;
+
+    margin: 70px auto 0;
+
+    text-align: center;
+}
+
+.share-story h3 {
+    color: #54233e;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 12px;
+}
+
+.share-story p {
+    color: #66545e;
+
+    margin-bottom: 25px;
+}
+
+.story-note {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+
+    text-align: center;
+
+    color: #88747e;
+
+    font-size: 0.85rem;
+}
+
+/* ---------- Information Note ---------- */
+
+.information-note {
+    max-width: 900px;
+
+    margin: 50px auto 0;
+
+    padding: 20px 25px;
+
+    border-left: 4px solid #9b456d;
+
+    background-color: #f5e8ee;
+
+    color: #66545e;
+
+    font-size: 0.9rem;
+}
+
+.information-note strong {
+    color: #54233e;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #30252d;
+    color: white;
+    padding: 50px 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #e8a9c5;
+    margin-bottom: 8px;
+}
+
+.footer-content p {
+    color: #cdbfc5;
+}
+
+.copyright {
+    margin-top: 25px;
+    font-size: 0.85rem;
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .nav-button {
+        padding: 8px 15px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro,
+    .community,
+    .care,
+    .contact {
+        padding: 70px 20px;
+    }
+    .hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.hero-content {
+    text-align: center;
+    margin: auto;
+}
+
+.hero-text {
+    margin: auto;
+}
+
+.hero-image {
+    height: 400px;
+}
+.info-grid {
+    grid-template-columns: 1fr;
+}
+.story-grid {
+    grid-template-columns: 1fr;
+}
+.care-grid {
+    grid-template-columns: 1fr;
+}
+
+.appointment-box {
+    padding: 35px 25px;
+}
+.support-grid {
+    grid-template-columns: 1fr;
+}
+
+.transparency-box {
+    padding: 30px 25px;
+}
+.symptom-grid,
+.tracking-grid {
+    grid-template-columns: 1fr;
+}
+.diagnosis-step {
+    grid-template-columns: 1fr;
+}
+
+.question-grid {
+    grid-template-columns: 1fr;
+}
+.treatment-grid {
+    grid-template-columns: 1fr;
+}
+.story-form {
+    padding: 25px 20px;
+}
+.care-grid {
+    grid-template-columns: 1fr;
+}
+
+.care-card p {
+    min-height: auto;
+}
+.directory-controls {
+    grid-template-columns: 1fr;
+}
+
+.directory-results {
+    grid-template-columns: 1fr;
+}
+.support-grid {
+    grid-template-columns: 1fr;
+}
+
+.other-support-grid {
+    grid-template-columns: 1fr;
+}
+
+.donation-section {
+    padding: 30px 20px;
+}
+
+.donation-notice {
+    flex-direction: column;
+}
+}
+/* ---------- WhatsApp ---------- */
+
+.whatsapp-button {
+    margin-top: 25px;
+
+    background-color: #ffffff;
+    color: #54233e;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Floating WhatsApp Button ---------- */
+
+.floating-whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #25D366;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 1.5rem;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
+
+    z-index: 999;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Information Pages ---------- */
+
+.page-hero {
+    padding: 100px 30px;
+
+    background-color: #f5e8ee;
+
+    text-align: center;
+}
+
+.page-hero-content {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.page-hero h1 {
+    color: #54233e;
+
+    font-size: clamp(2.8rem, 6vw, 5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.page-hero p:not(.eyebrow) {
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #66545e;
+
+    font-size: 1.1rem;
+}
+
+
+/* ---------- Article ---------- */
+
+.article-section {
+    padding: 90px 30px;
+
+    background-color: #fffaf8;
+}
+
+.article-container {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.article-container h2 {
+    color: #54233e;
+
+    font-size: 2rem;
+
+    margin-top: 45px;
+
+    margin-bottom: 15px;
+}
+
+.article-container h2:first-child {
+    margin-top: 0;
+}
+
+.article-container p {
+    color: #4d3b45;
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Highlight ---------- */
+
+.article-highlight {
+    margin: 40px 0;
+
+    padding: 30px;
+
+    background-color: #f5e8ee;
+
+    border-left: 5px solid #9b456d;
+
+    border-radius: 0 15px 15px 0;
+}
+
+.article-highlight strong {
+    display: block;
+
+    color: #54233e;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 10px;
+}
+
+.article-highlight p {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Article Action ---------- */
+
+.article-action {
+    margin-top: 60px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+}
+
+.article-action h3 {
+    color: #54233e;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.article-action p {
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Medical Disclaimer ---------- */
+
+.medical-disclaimer {
+    margin-top: 50px;
+
+    padding: 25px;
+
+    background-color: #fff3f0;
+
+    border: 1px solid #f0d8d2;
+
+    border-radius: 15px;
+}
+
+.medical-disclaimer strong {
+    display: block;
+
+    color: #54233e;
+
+    margin-bottom: 8px;
+}
+
+.medical-disclaimer p {
+    font-size: 0.9rem;
+
+    margin-bottom: 0;
+}
+
+/* ---------- Symptoms ---------- */
+
+.symptom-grid {
+    margin: 50px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.symptom-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.symptom-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(84, 35, 62, 0.08);
+}
+
+.symptom-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background-color: #f5e8ee;
+
+    color: #6f294f;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+}
+
+.symptom-card h3 {
+    color: #54233e;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 12px;
+}
+
+.symptom-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- Symptom Tracking ---------- */
+
+.tracking-grid {
+    margin: 40px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.tracking-item {
+    padding: 25px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 15px;
+}
+
+.tracking-item strong {
+    display: block;
+
+    color: #54233e;
+
+    margin-bottom: 8px;
+}
+
+.tracking-item p {
+    margin-bottom: 0;
+
+    font-size: 0.95rem;
+}
+
+/* ---------- Diagnosis Page ---------- */
+
+.diagnosis-steps {
+    margin: 50px 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.diagnosis-step {
+    display: grid;
+
+    grid-template-columns: 65px 1fr;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 18px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #f5e8ee;
+
+    color: #6f294f;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+}
+
+.diagnosis-step h3 {
+    color: #54233e;
+
+    margin-bottom: 8px;
+}
+
+.diagnosis-step p {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Appointment Questions ---------- */
+
+.question-grid {
+    margin: 40px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.question-card {
+    padding: 25px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 15px;
+}
+
+.question-card strong {
+    display: block;
+
+    color: #54233e;
+
+    margin-bottom: 10px;
+}
+
+.question-card p {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Question List ---------- */
+
+.question-list {
+    margin: 35px 0;
+}
+
+.question-list p {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee1e5;
+
+    margin-bottom: 0;
+}
+
+.question-list span {
+    color: #9b456d;
+
+    font-weight: 700;
+
+    font-size: 0.85rem;
+}
+
+/* ---------- Treatment Page ---------- */
+
+.treatment-grid {
+    margin: 50px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.treatment-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(84, 35, 62, 0.08);
+}
+
+.treatment-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background-color: #f5e8ee;
+
+    color: #6f294f;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+}
+
+.treatment-card h3 {
+    color: #54233e;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 12px;
+}
+
+.treatment-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 0;
+}
+
+
+/* ---------- Access to Care ---------- */
+
+.access-box {
+    margin: 40px 0;
+
+    padding: 35px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 20px;
+}
+
+.access-box h3 {
+    color: #54233e;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 12px;
+}
+
+.access-box p {
+    margin-bottom: 25px;
+}
+
+/* ---------- Share Your Story ---------- */
+
+.story-introduction {
+    margin-bottom: 35px;
+}
+
+.story-form {
+    margin-top: 45px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(84, 35, 62, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #54233e;
+
+    font-weight: 600;
+}
+
+.form-group label span {
+    color: #8a7780;
+
+    font-weight: 400;
+
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd0d6;
+
+    border-radius: 10px;
+
+    background-color: #fffaf8;
+
+    color: #3f3037;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #9b456d;
+
+    box-shadow:
+        0 0 0 3px rgba(155, 69, 109, 0.1);
+}
+
+.form-group small {
+    display: block;
+
+    margin-top: 7px;
+
+    color: #8a7780;
+
+    font-size: 0.85rem;
+}
+
+
+/* ---------- Consent ---------- */
+
+.consent-box {
+    margin: 30px 0;
+}
+
+.checkbox-label {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    color: #66545e;
+
+    line-height: 1.6;
+
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: 18px;
+    height: 18px;
+
+    margin-top: 3px;
+
+    flex-shrink: 0;
+}
+
+
+/* ---------- Form Message ---------- */
+
+.form-message {
+    margin-top: 20px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+/* ---------- Care Directory ---------- */
+
+.care-grid {
+    margin: 50px 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.care-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.care-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(84, 35, 62, 0.08);
+}
+
+.care-icon {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.care-card h3 {
+    color: #54233e;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 12px;
+}
+
+.care-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+
+    min-height: 95px;
+}
+
+.care-button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #54233e;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.care-button:hover {
+    transform: translateY(-2px);
+
+    background-color: #6f294f;
+}
+/* ---------- Care Directory ---------- */
+
+.directory-section {
+    margin-top: 70px;
+    padding-top: 60px;
+
+    border-top: 1px solid #eee1e5;
+}
+
+.directory-heading {
+    margin-bottom: 35px;
+
+    max-width: 700px;
+}
+
+.directory-heading h2 {
+    margin-bottom: 12px;
+
+    color: #54233e;
+}
+
+.directory-heading p {
+    color: #66545e;
+
+    line-height: 1.7;
+}
+
+
+/* Search and filter */
+
+.directory-controls {
+    margin-bottom: 35px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 20px;
+}
+
+.search-box,
+.filter-box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.search-box label,
+.filter-box label {
+    color: #54233e;
+
+    font-weight: 600;
+}
+
+.search-box input,
+.filter-box select {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd0d6;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: #3f3037;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    outline: none;
+}
+
+.search-box input:focus,
+.filter-box select:focus {
+    border-color: #9b456d;
+
+    box-shadow:
+        0 0 0 3px rgba(155, 69, 109, 0.1);
+}
+
+
+/* Directory results */
+
+.directory-results {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.resource-card {
+    padding: 28px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(84, 35, 62, 0.08);
+}
+
+.resource-type {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background-color: #f5e8ee;
+
+    color: #6f294f;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.resource-card h3 {
+    margin-bottom: 8px;
+
+    color: #54233e;
+
+    font-size: 1.3rem;
+}
+
+.resource-location {
+    margin-bottom: 15px;
+
+    color: #8a7780;
+
+    font-size: 0.9rem;
+}
+
+.resource-card p {
+    color: #66545e;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+.resource-status {
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #eee1e5;
+
+    color: #6f294f;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+}
+
+
+/* No results */
+
+.no-results {
+    display: none;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #8a7780;
+
+    background-color: #f5e8ee;
+
+    border-radius: 15px;
+}
+.directory-section {
+    scroll-margin-top: 30px;
+}
+/* ---------- Resource Contact & Links ---------- */
+
+.resource-contact {
+    margin-top: 15px;
+}
+
+.resource-contact a {
+    color: #6f294f;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.resource-contact a:hover {
+    text-decoration: underline;
+}
+
+.resource-link {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    color: #6f294f;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: underline;
+}
+/* ---------- Resource Suggestion Form ---------- */
+
+.resource-form-intro {
+    max-width: 700px;
+
+    margin-bottom: 35px;
+}
+
+.resource-form-intro h2 {
+    color: #54233e;
+
+    margin-bottom: 12px;
+}
+
+.resource-form-intro p {
+    color: #66545e;
+
+    line-height: 1.7;
+}
+
+
+.resource-form {
+    max-width: 750px;
+
+    padding: 35px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(84, 35, 62, 0.05);
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 22px;
+}
+
+
+.form-group label {
+    color: #54233e;
+
+    font-weight: 600;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #ddd0d6;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: #3f3037;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    line-height: 1.6;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #9b456d;
+
+    box-shadow:
+        0 0 0 3px rgba(155, 69, 109, 0.1);
+}
+
+
+.resource-form .primary-button {
+    border: none;
+
+    cursor: pointer;
+}
+/* ---------- Support Page ---------- */
+
+.support-intro {
+    max-width: 750px;
+
+    margin-bottom: 40px;
+}
+
+.support-intro h2 {
+    color: #54233e;
+
+    margin-bottom: 12px;
+}
+
+.support-intro p {
+    color: #66545e;
+
+    line-height: 1.7;
+}
+
+
+/* Support cards */
+
+.support-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 70px;
+}
+
+.support-card {
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 18px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.support-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 25px rgba(84, 35, 62, 0.08);
+}
+
+.support-icon {
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+}
+
+.support-card h3 {
+    color: #54233e;
+
+    margin-bottom: 10px;
+}
+
+.support-card p {
+    color: #66545e;
+
+    line-height: 1.7;
+}
+
+
+/* Donation section */
+
+.donation-section {
+    margin-bottom: 70px;
+
+    padding: 45px;
+
+    background-color: #f7e9ef;
+
+    border-radius: 22px;
+}
+
+.donation-content {
+    max-width: 750px;
+}
+
+.donation-content h2 {
+    color: #54233e;
+
+    margin-bottom: 15px;
+}
+
+.donation-content > p {
+    color: #66545e;
+
+    line-height: 1.7;
+}
+
+
+/* Donation notice */
+
+.donation-notice {
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead9e0;
+}
+
+.donation-icon {
+    font-size: 2rem;
+}
+
+.donation-notice h3 {
+    color: #54233e;
+
+    margin-bottom: 8px;
+}
+
+.donation-notice p {
+    color: #66545e;
+
+    line-height: 1.6;
+
+    margin-bottom: 8px;
+}
+
+
+/* Other support */
+
+.other-support {
+    margin-bottom: 60px;
+}
+
+.other-support h2 {
+    color: #54233e;
+
+    margin-bottom: 30px;
+}
+
+.other-support-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.other-support-card {
+    padding: 30px;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 18px;
+
+    background-color: white;
+}
+
+.other-support-card h3 {
+    color: #54233e;
+
+    margin-bottom: 10px;
+}
+
+.other-support-card p {
+    color: #66545e;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.secondary-button {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border: 1px solid #6f294f;
+
+    border-radius: 8px;
+
+    color: #6f294f;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.secondary-button:hover {
+    background-color: #6f294f;
+
+    color: white;
+}
+/* ==========================================
+   ENDO WARRIORS STORY MODAL
+   ========================================== */
+
+.story-modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    z-index: 1000;
+}
+
+
+.story-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.story-modal-content {
+    position: relative;
+
+    width: min(700px, 100%);
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.2);
+
+    transform: translateY(20px);
+
+    transition: transform 0.3s ease;
+}
+
+
+.story-modal.active .story-modal-content {
+    transform: translateY(0);
+}
+
+
+.story-close {
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #333;
+}
+
+
+.story-close:hover {
+    opacity: 0.7;
+}
+
+
+.story-modal-content h2 {
+    margin-top: 10px;
+
+    margin-bottom: 24px;
+}
+
+
+#story-content {
+    line-height: 1.8;
+}
+
+
+#story-content p {
+    margin-bottom: 18px;
+}
+
+
+#story-content h3 {
+    margin-top: 30px;
+
+    margin-bottom: 12px;
+}
