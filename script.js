@@ -41,15 +41,24 @@ const careResources = [
 
     {
         name: "The Hem Practice",
-        type: "specialist",
+
+        types: [
+            "specialist"
+        ],
+
         county: "Kiambu",
+
         location: "Thika",
+
         services:
             "OBGYN & Laparoscopic Surgery; Endometriosis Care",
+
         phone:
             "+254 792 477 263",
+
         website:
             "",
+
         verified:
             "Information supplied for ENDO HOPE directory — verification pending"
     },
@@ -57,15 +66,25 @@ const careResources = [
 
     {
         name: "3rd Park Hospital",
-        type: "specialist",
+
+        types: [
+            "hospital",
+            "specialist"
+        ],
+
         county: "Nairobi",
+
         location: "Parklands, Nairobi",
+
         services:
             "Endometriosis diagnosis & treatment; Gynaecology; Laparoscopic surgery",
+
         phone:
             "+254 730 819 900",
+
         website:
             "https://3rdparkhospital.com/",
+
         verified:
             "Official hospital information checked August 2026"
     },
@@ -73,18 +92,29 @@ const careResources = [
 
     {
         name: "Aga Khan University Hospital, Nairobi",
-        type: "specialist",
+
+        types: [
+            "hospital",
+            "specialist"
+        ],
+
         county: "Nairobi",
+
         location: "Parklands, Nairobi",
+
         services:
             "Gynaecology; Endometriosis care; Laparoscopy; Hysteroscopy",
+
         phone:
             "+254 711 092 876",
+
         website:
             "https://hospitals.aku.edu/nairobi/",
+
         verified:
             "Official hospital information checked August 2026"
     }
+
 ];
 
 
@@ -117,8 +147,35 @@ function displayCareResources(resources) {
         card.innerHTML = `
 
             <span class="resource-type">
-                ${resource.type}
-            </span>
+    ${resource.types
+        .map(function(type) {
+
+            if (type === "hospital") {
+                return "Healthcare Facility";
+            }
+
+            if (type === "specialist") {
+                return "Specialist";
+            }
+
+            if (type === "diagnostics") {
+                return "Diagnostics";
+            }
+
+            if (type === "pharmacy") {
+                return "Medication & Pharmacy";
+            }
+
+            if (type === "support") {
+                return "Community Support";
+            }
+
+            return type;
+
+        })
+        .join(" • ")
+    }
+</span>
 
 
             <h3>
@@ -228,7 +285,7 @@ function filterCareResources() {
 
             const matchesType =
                 selectedType === "all" ||
-                resource.type === selectedType;
+                resource.types.includes(selectedType);
 
 
             return (
@@ -267,75 +324,80 @@ if (careSearch && careType) {
 /* ---------- Care Category Buttons ---------- */
 
 const careCategoryButtons =
-    document.querySelectorAll(
-        "[data-care-filter]"
-    );
-
+    document.querySelectorAll("[data-care-filter]");
 
 careCategoryButtons.forEach(function(button) {
 
-    button.addEventListener(
-        "click",
-        function() {
+    button.addEventListener("click", function(event) {
 
-            const selectedFilter =
-                button.dataset.careFilter;
+        event.preventDefault();
 
+        const selectedFilter =
+            button.dataset.careFilter;
 
-            /*
-             * Set the directory filter
-             */
+        /*
+         * Set the directory filter
+         */
 
-            if (careType) {
+        if (careType) {
+            careType.value = selectedFilter;
+        }
 
-                careType.value =
-                    selectedFilter;
+        /*
+         * Clear the search box
+         */
 
-            }
+        if (careSearch) {
+            careSearch.value = "";
+        }
 
+        /*
+         * Display the filtered resources
+         */
 
-            /*
-             * Clear the search box
-             */
+        filterCareResources();
 
-            if (careSearch) {
+        /*
+         * Find the Care Directory
+         */
 
-                careSearch.value = "";
+        const directory =
+            document.querySelector(".directory-section");
 
-            }
+        if (directory) {
 
-
-            /*
-             * Update the results
-             */
-
-            filterCareResources();
-
-
-            /*
-             * Scroll to the directory
-             */
-
-            const directory =
-                document.querySelector(
-                    ".directory-section"
-                );
-
-
-            if (directory) {
-
-                directory.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
-            }
+            window.scrollTo({
+                top: directory.offsetTop - 100,
+                behavior: "smooth"
+            });
 
         }
 
-    );
+    });
 
 });
+/* ---------- Care Directory URL Filter ---------- */
+
+const careURLParams =
+    new URLSearchParams(window.location.search);
+
+const URLCareType =
+    careURLParams.get("type");
+
+
+if (
+    careType &&
+    URLCareType
+) {
+
+    careType.value = URLCareType;
+
+    filterCareResources();
+
+}
+
+
+
 
 /* ---------- Suggest a Resource ---------- */
 
@@ -481,28 +543,66 @@ const stories = {
 
     "story-2": {
         label: "WARRIOR STORY 02",
-        title: "\"Getting answers changed everything.\"",
+        title: "\"My Journey: From Period Pain to an Endometriosis Diagnosis.\"",
 
         content: `
             <p>
-                After years of searching for answers, receiving
-                a diagnosis finally gave her a name for what
-                she had been experiencing.
+                My endometriosis journey began long before I knew what endometriosis was.
+
+At 13 years old, I started experiencing period pain.
+
+At first, the symptoms were inconsistent. Some months were worse than others, and I didn't understand why. But the pain was there, and as the years went by, it began to feel like something I would simply have to live with.
+
+By the time I was 19, the pain had affected much more than just my periods.
+
+It affected how I saw myself, how I felt about being a woman, and how I imagined my future. There were times when the pain made me resent so many things. I began to wonder if this was simply what being a woman meant for me — to experience pain over and over again, with no real end in sight.
             </p>
 
             <p>
-                The diagnosis did not make the journey disappear,
-                but it helped her understand her body and begin
-                making informed decisions about her care.
-            </p>
+                Then, at 19, I finally received a diagnosis of endometriosis at Lusigetti Hospital.
 
+For the first time, there was a name for what I had been experiencing.
+
+But getting a diagnosis did not mean the journey was over.
+
+At that point, we did not know much about the disease. We believed medication and painkillers would be enough to help me manage the pain. And for a while, they did.
+
+But gradually, they became less effective.
+
+The pain continued to be part of my life, and I began to understand that this was not something that could simply be ignored or treated with painkillers forever.
+
+Years later, in 2026, my journey has brought me to another stage of this disease: deep infiltrating endometriosis (DIE).
+
+The disease has progressed and spread, and I continue to navigate what that means for my body and my life.
+            </p>
+            <p>
+            Throughout this journey, I have also had the support and care of my doctor, Dr. Murithi from HEM Practice, who has been part of my medical journey.
+
+Looking back, one of the things I wish I had known much earlier is that period pain should not simply be dismissed as something every woman has to endure.
+
+Pain that interferes with your life deserves attention.
+
+Pain that keeps coming back deserves to be investigated.
+
+And women deserve to be listened to.
+
+I am sharing my story because I do not want another 13-year-old girl to grow up believing that severe period pain is simply something she has to accept.
+
+I do not want another young woman to spend years wondering why her body hurts and whether anyone will believe her.
+
+Period pain is not something we should automatically normalise.
+
+Through ENDO HOPE, I want to help create awareness, share reliable information, encourage women to seek appropriate medical care, and remind women living with endometriosis that they are not alone.
+
+If you are living with this disease, your pain is real. Your experience matters. And you deserve to be heard.</p>
             <h3>
-                What I wish other women knew
+                This is my story.
             </h3>
 
             <p>
-                Your journey may take time, but you deserve to
-                be listened to and taken seriously.
+                And this is why I am an ENDO WARRIOR.
+
+Let's spread awareness. Let's educate ourselves. Let's support one another. And let's come through for women who are suffering.
             </p>
         `
     },

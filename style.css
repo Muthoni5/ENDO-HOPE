@@ -247,7 +247,8 @@ nav {
 /* ---------- Find Care ---------- */
 
 .care-grid {
-    max-width: 1100px;
+    width: 100%;
+    max-width: 1200px;
 
     margin: 60px auto 0;
 
@@ -255,6 +256,8 @@ nav {
     grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
+
+    justify-content: center;
 }
 
 .care-card {
@@ -1502,13 +1505,17 @@ footer {
 /* ---------- Care Directory ---------- */
 
 .care-grid {
-    margin: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 60px auto 0;
 
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
+
+    justify-content: center;
 }
 
 .care-card {
@@ -2164,7 +2171,7 @@ footer {
 
     width: min(700px, 100%);
 
-    max-height: 85vh;
+    max-height: 60vh;
 
     overflow-y: auto;
 
@@ -2237,4 +2244,453 @@ footer {
     margin-top: 30px;
 
     margin-bottom: 12px;
+}
+/* ==========================================
+   DONATE PAGE
+   ========================================== */
+
+
+/* ---------- Shared Container ---------- */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/* ---------- Donate Navigation ---------- */
+
+.site-header {
+    background-color: #fffaf8;
+
+    border-bottom: 1px solid #eee1e5;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.site-header .container {
+    min-height: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.site-header .logo {
+    flex-shrink: 0;
+
+    text-decoration: none;
+
+    font-size: 1.5rem;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    color: #6f294f;
+}
+
+.main-nav {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 28px;
+}
+
+.main-nav a {
+    text-decoration: none;
+
+    color: #4d3b45;
+
+    font-size: 0.95rem;
+
+    font-weight: 500;
+
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #9b456d;
+}
+
+
+/* ---------- Donation Hero ---------- */
+
+.donation-hero {
+    padding: 90px 0 80px;
+
+    background-color: #f5e8ee;
+}
+
+.donation-hero .container {
+    max-width: 950px;
+}
+
+.donation-hero h1 {
+    max-width: 850px;
+
+    margin-top: 12px;
+
+    margin-bottom: 25px;
+
+    color: #54233e;
+
+    font-size: clamp(2.8rem, 6vw, 5rem);
+
+    line-height: 1.1;
+}
+
+.donation-hero .hero-text {
+    max-width: 720px;
+
+    margin: 0;
+
+    color: #66545e;
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- Donation Section ---------- */
+
+.donation-section {
+    padding: 80px 0;
+
+    background-color: #fffaf8;
+}
+
+
+/* ---------- Donation Card ---------- */
+
+.donation-card {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+
+    background-color: white;
+
+    border: 1px solid #eee1e5;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(84, 35, 62, 0.07);
+}
+
+.donation-card h2 {
+    color: #54233e;
+
+    font-size: 2.2rem;
+
+    margin-top: 10px;
+
+    margin-bottom: 15px;
+}
+
+.donation-card > p {
+    color: #66545e;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Payment Box ---------- */
+
+.payment-box {
+    margin: 35px 0;
+
+    padding: 30px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 18px;
+
+    border: 1px solid #ead9e0;
+}
+
+.payment-box h3 {
+    color: #54233e;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 20px;
+}
+
+.payment-detail {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ead9e0;
+}
+
+.payment-detail:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.payment-detail span {
+    color: #66545e;
+
+    font-weight: 500;
+}
+
+.payment-detail strong {
+    color: #6f294f;
+
+    font-size: 1.1rem;
+}
+
+
+/* ---------- Donation Instructions ---------- */
+
+.donation-instructions {
+    margin-top: 35px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid #eee1e5;
+}
+
+.donation-instructions h3 {
+    color: #54233e;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 20px;
+}
+
+.donation-instructions ol {
+    padding-left: 25px;
+
+    color: #66545e;
+
+    line-height: 1.8;
+}
+
+.donation-instructions li {
+    margin-bottom: 8px;
+}
+
+.donation-instructions strong {
+    color: #54233e;
+}
+
+
+/* ---------- Donation Confirmation ---------- */
+
+.donation-confirmation {
+    margin-top: 35px;
+
+    padding: 28px;
+
+    background-color: #f5e8ee;
+
+    border-radius: 18px;
+}
+
+.donation-confirmation h3 {
+    color: #54233e;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 12px;
+}
+
+.donation-confirmation p {
+    color: #66545e;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+.donation-confirmation p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------- Donation Note ---------- */
+
+.donation-note {
+    margin-top: 35px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #eee1e5;
+}
+
+.donation-note p {
+    color: #66545e;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.donation-note strong {
+    color: #54233e;
+}
+
+
+/* ---------- Donate Footer ---------- */
+
+.site-footer {
+    background-color: #30252d;
+
+    color: white;
+
+    padding: 50px 30px;
+}
+
+.site-footer .container {
+    text-align: center;
+}
+
+.site-footer p {
+    color: #cdbfc5;
+
+    font-size: 0.9rem;
+}
+
+
+/* ---------- Donate Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .site-header .container {
+        min-height: auto;
+
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+    }
+
+    .main-nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+    }
+
+    .main-nav a {
+        font-size: 0.88rem;
+    }
+
+    .donation-hero {
+        padding: 60px 0;
+    }
+
+    .donation-hero h1 {
+        font-size: 3rem;
+    }
+
+    .donation-hero .hero-text {
+        font-size: 1rem;
+    }
+
+    .donation-section {
+        padding: 50px 0;
+    }
+
+    .donation-card {
+        padding: 30px 22px;
+
+        border-radius: 18px;
+    }
+
+    .donation-card h2 {
+        font-size: 1.9rem;
+    }
+
+    .payment-box {
+        padding: 22px;
+    }
+
+    .payment-detail {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .donation-instructions ol {
+        padding-left: 22px;
+    }
+
+}
+/* ---------- Donation Impact ---------- */
+
+.donation-impact {
+    margin: 35px 0;
+    padding: 30px;
+    background-color: #fffaf8;
+    border: 1px solid #eee1e5;
+    border-radius: 18px;
+}
+
+.donation-impact h3 {
+    color: #54233e;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.donation-impact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.donation-impact li {
+    color: #66545e;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.donation-impact li:last-child {
+    margin-bottom: 0;
 }
