@@ -509,39 +509,139 @@ const storyLabel = document.getElementById("story-label");
 const storyContent = document.getElementById("story-content");
 
 
+
 const stories = {
 
     "story-1": {
         label: "WARRIOR STORY 01",
-        title: "\"I thought the pain was normal.\"",
+        title: "\"The Pain Nobody Could See\"",
 
         content: `
             <p>
-                For years, she believed that severe period pain
-                was simply something she had to live with.
+                For a long time, I became very good at pretending
+                I was okay.
             </p>
 
             <p>
-                The pain affected school, work and everyday life,
-                but because she had been told that painful periods
-                were normal, she did not initially know that she
-                could ask for more answers.
+                I learned how to smile when I was in pain. I learned
+                how to attend work, attend family gatherings and meet
+                friends while quietly counting the minutes until I
+                could go home and lie down.
+            </p>
+
+            <p>
+                People around me often saw a woman who was functioning.
+                They didn't see everything it took to get through the day.
+            </p>
+
+            <p>
+                My periods were difficult, but what confused me most
+                was how unpredictable my body could be. There were days
+                when I felt completely fine, and then suddenly the pain
+                would come and take over everything.
+            </p>
+
+            <p>
+                Sometimes I cancelled plans. Sometimes I struggled to
+                concentrate at work. Sometimes I simply wanted everyone
+                to leave me alone because explaining how I felt was more
+                exhausting than the pain itself.
+            </p>
+
+            <p>
+                The hardest part wasn't always the physical pain.
+            </p>
+
+            <p>
+                It was hearing things like, <em>"Maybe you're just
+                stressed."</em>
+            </p>
+
+            <p>
+                Or, <em>"All women experience period pain."</em>
+            </p>
+
+            <p>
+                After hearing those things enough times, I started
+                questioning myself.
+            </p>
+
+            <p>
+                Was I exaggerating? Was I being weak? Was this really
+                something I just needed to learn to live with?
+            </p>
+
+            <p>
+                Eventually, I realised that constantly struggling did
+                not make me weak. It meant that something deserved
+                attention.
+            </p>
+
+            <p>
+                Seeking medical help became an important part of my
+                journey. I began asking more questions, learning about
+                my body and trying to understand what was happening
+                rather than simply enduring it.
             </p>
 
             <h3>
-                What I wish I knew earlier
+                What My Journey Taught Me
             </h3>
 
             <p>
-                Pain that repeatedly interferes with your daily
-                life deserves attention. Asking questions about
-                your health is not asking for too much.
+                My journey with endometriosis has taught me that an
+                illness does not have to be visible for it to be real.
+            </p>
+
+            <p>
+                There are women going to work while experiencing pain.
+                There are women caring for their families while
+                struggling. There are women cancelling plans because
+                their bodies simply will not cooperate.
+            </p>
+
+            <p>
+                And there are women who have become experts at saying
+                <strong>"I'm fine"</strong> when they are anything
+                but fine.
+            </p>
+
+            <p>
+                I share my story because I want women to know that
+                they don't have to be ashamed of asking questions
+                about their health.
+            </p>
+
+            <p>
+                You know your body. If something doesn't feel right,
+                it deserves to be taken seriously.
+            </p>
+
+            <p>
+                I am still learning, still navigating my journey and
+                still discovering what living with endometriosis means
+                for me.
+            </p>
+
+            <p>
+                But I no longer believe that I have to suffer silently.
+            </p>
+
+            <p>
+                <strong>
+                    My pain may not always be visible, but my experience
+                    is real.
+                </strong>
+            </p>
+
+            <p>
+                And I am an <strong>ENDO WARRIOR.</strong>
             </p>
         `
     },
 
 
-    "story-2": {
+   "story-2": {
         label: "WARRIOR STORY 02",
         title: "\"My Journey: From Period Pain to an Endometriosis Diagnosis.\"",
 
@@ -608,35 +708,101 @@ Let's spread awareness. Let's educate ourselves. Let's support one another. And 
     },
 
 
-    "story-3": {
-        label: "WARRIOR STORY 03",
-        title: "\"I learned to listen to my body.\"",
 
-        content: `
-            <p>
-                Her journey taught her that understanding her
-                body was an important part of living with
-                endometriosis.
-            </p>
+"story-3": {
+    label: "WARRIOR STORY 03",
+    title: "\"I learned to speak up for myself.\"",
 
-            <p>
-                She began asking more questions, seeking support
-                and learning how to communicate her experiences
-                more clearly.
-            </p>
+    content: `
+        <p>
+            There was a time when I stopped asking questions about
+            my health because I was afraid of being told that nothing
+            was wrong.
+        </p>
 
-            <h3>
-                What I want other Warriors to know
-            </h3>
+        <p>
+            I had appointments where I struggled to explain what I
+            was experiencing. Sometimes I forgot the questions I had
+            planned to ask. Other times, I left wondering whether I
+            had explained myself clearly enough.
+        </p>
 
-            <p>
-                You know your experience. Do not be afraid to
-                speak about it and seek the support you need.
-            </p>
-        `
+        <p>
+            I began writing things down before my appointments.
+            I recorded when the pain happened, how long it lasted,
+            how it affected my daily activities and the questions
+            I wanted answered.
+        </p>
+
+        <p>
+            It may seem like a small thing, but it changed the way
+            I approached my healthcare.
+        </p>
+
+        <p>
+            I realised that I didn't have to feel embarrassed about
+            asking for an explanation. I didn't have to pretend that
+            I understood everything. And I didn't have to accept
+            feeling unheard as the end of the conversation.
+        </p>
+
+        <h3>
+            Finding My Voice
+        </h3>
+
+        <p>
+            Learning about endometriosis also helped me understand
+            my own experience differently.
+        </p>
+
+        <p>
+            I started asking questions instead of quietly accepting
+            uncertainty. I started preparing for appointments instead
+            of hoping I would remember everything in the moment.
+        </p>
+
+        <p>
+            Most importantly, I learned that advocating for myself
+            was not being difficult.
+        </p>
+
+        <p>
+            It was taking my health seriously.
+        </p>
+
+        <p>
+            My journey is still ongoing. I don't have every answer,
+            and some days are harder than others. But I no longer
+            feel that I have to stay silent just because I am unsure
+            of what to say.
+        </p>
+
+        <p>
+            If you are struggling to explain what you are experiencing,
+            write it down. Ask questions. Take someone you trust with
+            you if that helps.
+        </p>
+
+        <p>
+            Your questions are valid, and your experience deserves
+            to be heard.
+        </p>
+
+        <p>
+            <strong>
+                I am learning to trust my voice, ask for answers and
+                advocate for myself.
+            </strong>
+        </p>
+
+        <p>
+            And I am an <strong>ENDO WARRIOR.</strong>
+        </p>
+    `
     }
 
 };
+
 storyButtons.forEach(button => {
 
     button.addEventListener("click", () => {
