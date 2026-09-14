@@ -2504,6 +2504,20 @@ footer {
     font-size: 1.1rem;
 }
 
+.payment-note {
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #ead9e0;
+
+    color: #8a7580;
+
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+}
+
 
 /* ---------- Donation Instructions ---------- */
 
@@ -2574,6 +2588,44 @@ footer {
 
 
 /* ---------- Donation Note ---------- */
+
+.fundraiser-note {
+    margin: 30px 0;
+
+    padding: 25px 28px;
+
+    background-color: #f5e8ee;
+
+    border-left: 4px solid #9b456d;
+
+    border-radius: 12px;
+}
+
+.fundraiser-note h3 {
+    color: #54233e;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 12px;
+}
+
+.fundraiser-note p {
+    color: #54233e;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+.fundraiser-note p:last-child {
+    margin-bottom: 0;
+}
+
+.donation-impact-intro {
+    color: #66545e;
+
+    margin-bottom: 15px;
+}
 
 .donation-note {
     margin-top: 35px;
