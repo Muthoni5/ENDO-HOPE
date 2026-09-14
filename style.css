@@ -202,7 +202,8 @@ nav {
 .intro,
 .community,
 .care,
-.contact {
+.contact,
+.about {
     padding: 100px 30px;
 }
 
@@ -432,6 +433,10 @@ nav {
     color: #66545e;
 }
 /* ---------- Contact ---------- */
+
+.about {
+    background-color: white;
+}
 
 .contact {
     background-color: #54233e;
