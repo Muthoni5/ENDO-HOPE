@@ -760,10 +760,6 @@ footer {
 .story-grid {
     grid-template-columns: 1fr;
 }
-.care-grid {
-    grid-template-columns: 1fr;
-}
-
 .appointment-box {
     padding: 35px 25px;
 }
@@ -792,14 +788,31 @@ footer {
     padding: 25px 20px;
 }
 .care-grid {
+    display: grid;
     grid-template-columns: 1fr;
+    width: 100%;
+    gap: 25px;
+    box-sizing: border-box;
 }
-
+.care-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
 .care-card p {
     min-height: auto;
 }
+.directory-section {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 25px;
+}
+
 .directory-controls {
     grid-template-columns: 1fr;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .directory-results {
@@ -1591,38 +1604,54 @@ footer {
         transform 0.2s ease;
 }
 
+@media (max-width: 768px) {
+    .care-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 25px;
+        box-sizing: border-box;
+    }
+
+    .care-card {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+}
+
 .care-button:hover {
     transform: translateY(-2px);
 
     background-color: #6f294f;
 }
+
 /* ---------- Care Directory ---------- */
 
 .directory-section {
-    margin-top: 70px;
-    padding-top: 60px;
-
-    border-top: 1px solid #eee1e5;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 60px;
+    padding: 40px;
+    background-color: #f5e8ee;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .directory-heading {
-    margin-bottom: 35px;
-
+    width: 100%;
     max-width: 700px;
+    margin-bottom: 35px;
 }
 
 .directory-heading h2 {
     margin-bottom: 12px;
-
     color: #54233e;
 }
 
 .directory-heading p {
     color: #66545e;
-
     line-height: 1.7;
 }
-
 
 /* Search and filter */
 
